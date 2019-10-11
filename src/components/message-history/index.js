@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 import Message from "../message";
 
 const MessageHistory = ({ messages }) => (
-  <ul>
+  <div>
     {messages.map(todo => (
       <Message key={todo.id} {...todo} />
     ))}
-  </ul>
+  </div>
 );
 
 MessageHistory.propTypes = {
