@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './index.css'
+import styles from './style.module.css'
 
 const Message = ({ onClick, message }) => (
-  <li
+  <p
     onClick={onClick}
-    className={"from-sender"}
+    className={styles['from-me']}
   >
     {message}
-  </li>
+  </p>
 );
 
 Message.propTypes = {
